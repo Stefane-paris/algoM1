@@ -28,7 +28,7 @@ __Mais c'est quoi un temps raisonnable ?__
 > Une instance $I$ du problème $\Pi$ peut être obtenue en remplaçant les paramètres de $\Pi$ par des valeurs données.  
 
 $$
-\Pi :\text{Problème voyageur de commerce} \\ 
+**\Pi :\text{Problème voyageur de commerce} \\ 
 \,\\
 \text{N : nombre de ville à visiter}\\
 d_{i,j}\text{: distance entre les villes i et j}\\
@@ -41,7 +41,7 @@ $$
 
 ##### Exemple
 
- C'est un _"exemple"_ du problème $\Pi$
+ C'est un *"exemple"* du problème $\Pi$
 
 $I$:
 
@@ -60,11 +60,11 @@ $I$:
 
 ##### Exemple
 
-$log(N)+\sum_{i\neq j}log(d_{i,j})$
+$ log(N)+\sum_{i\neq j}log(d_{i,j}) $
 
-Si $d_{i,j}\leq D_MAX$
+Si $ d_{i,j}\leq D_MAX $
 
-alors $|I|=log N+O(N²log(D_MAX))\approx O(N²log(\text{D_MAX}))$
+Alors $|I|=log N + O(N^2 \log(D_\mathrm{MAX})) \approx O(N^2 \log(D_\mathrm{MAX}))$
 
 #### I.3 Complexité d'un algorithme A
 
@@ -100,16 +100,18 @@ Nombre d'instruction $=O(n)=O(e^{|I|})$
 
 $\Pi$ : tri d'un tableau à $N$ éléments $a_1a_2,\cdots,a_N$
 
-:arrow_right: Taille de l'instance: $log(N)+\sum_{i=1}^{N}log\, a_i=O(Nlog(max_{i\in\{1\cdots N\}}\,a_i))=O(Nlog(\text{A_MAX}))$
+&rarr; Taille de l'instance: $log(N)+\sum_{i=1}^{N}log\, a_i=O(Nlog(max_{i\in\{1\cdots N\}}\,a_i))=O(Nlog(\text{A_MAX}))$
 
-Algorithme d'echange classique: on procède en échangant deux élements si ces deux données sont mal ordonnées :arrow_right: $O(N²)$ 
+Algorithme d'échange classique: on procède en échangant deux élements si ces deux données sont mal ordonnées $\implies$ $O(N²)$ 
 
-:arrow_right: Complexité = $O(N²)=O(|I|²)$
+&rarr; Complexité = $O(N²)=O(|I|²)$
 
-> On a des problèmes pour lesquels on possède des algorithme polynomiaux ($\in P$ _problème polynamiaux_). Et, il y a les autres problèmes. Pour ces derniers on peut évoquer la class $NP$ pour lesquels la vérification de la <u>faisabilité</u> de la solution se fait en un temps polynomial.  
+> On a des problèmes pour lesquels on possède des algorithmes polynomiaux ($\in P$ *problème polynamiaux*).
+> Et il y a les autres problèmes.
+> Pour ces derniers on peut évoquer la class $NP$ pour lesquels la vérification de la <u>faisabilité</u> de la solution se fait en un temps polynomial.  
 
 $$
-\Rightarrow P \subseteq NP
+\implies P \subseteq NP
 $$
 
 ------
